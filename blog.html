@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Diwan Games Official</title>
+    <meta name="description" content="Stay updated with the latest updates, gaming strategies, and tips from Diwan Games.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.diwangames.online/blog.html">
+
+    <style>
+        :root {
+            --bg-main: #0B0E14;
+            --bg-card: #151A23;
+            --bg-nav: #121620;
+            --accent-green: #00E676;
+            --accent-gold: #FFD700;
+            --text-main: #FFFFFF;
+            --text-muted: #9EA8B6;
+            --border-color: #232A37;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--bg-nav);
+            border-bottom: 1px solid var(--border-color);
+            padding: 15px 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--accent-green);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-green);
+        }
+
+        /* Hero Banner */
+        .hero {
+            text-align: center;
+            padding: 50px 20px 30px;
+            border-bottom: 1px solid var(--border-color);
+            background: radial-gradient(circle at top, rgba(0, 230, 118, 0.08) 0%, transparent 70%);
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* Blog Grid */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+            gap: 25px;
+        }
+
+        /* Card Style */
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-green);
+        }
+
+        .badge {
+            align-self: flex-start;
+            background: rgba(0, 230, 118, 0.12);
+            color: var(--accent-green);
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            font-size: 1.25rem;
+            color: var(--text-main);
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.92rem;
+            margin-bottom: 20px;
+        }
+
+        .meta {
+            font-size: 0.8rem;
+            color: #6C7A8C;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--border-color);
+            padding-top: 12px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-nav);
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            padding: 25px 20px;
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--accent-green);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 12px;
+            }
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Diwan Games</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Us</a>
+                <a href="how-to-play.html">How To Play</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Diwan Games Official Blog</h1>
+        <p>Explore official announcements, platform updates, and gameplay strategies.</p>
+    </section>
+
+    <!-- Blog Section -->
+    <main class="container">
+        <div class="blog-grid">
+
+            <!-- Card 1 -->
+            <article class="card">
+                <div>
+                    <span class="badge">Official Updates</span>
+                    <h2>Welcome to Diwan Games Platform</h2>
+                    <p>Discover our range of entertainment options and learn how to get started on the official platform with ease.</p>
+                </div>
+                <div class="meta">
+                    <span>August 2026</span>
+                    <span>Diwan Games</span>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div>
+                    <span class="badge">Guides</span>
+                    <h2>How to Safely Navigate & Play</h2>
+                    <p>A simple step-by-step guideline covering security practices, clean navigation, and smooth user experience.</p>
+                </div>
+                <div class="meta">
+                    <span>August 2026</span>
+                    <span>Admin Team</span>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div>
+                    <span class="badge">Fair Play</span>
+                    <h2>Responsible Gaming Practices</h2>
+                    <p>Our commitment to maintaining a transparent, safe, and reliable environment for all users.</p>
+                </div>
+                <div class="meta">
+                    <span>August 2026</span>
+                    <span>Support Team</span>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Diwan Games. All rights reserved. | <a href="terms-and-conditions.html">Terms</a> & <a href="responsible-gaming.html">Responsible Gaming</a></p>
+    </footer>
+
+</body>
+</html>
