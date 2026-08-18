@@ -1,1324 +1,1100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>FAQ - DiwaSlot</title>
+<title>FAQ - DiwaSlot</title>
 
-  <meta
-    name="description"
-    content="Find answers to frequently asked questions about DiwaSlot, including app downloads, account creation, age requirements, bonuses, support and privacy."
-  >
+<meta name="description" content="Frequently asked questions about DiwaSlot, including downloads, account setup, age requirements, bonuses, support and privacy.">
 
-  <meta
-    name="robots"
-    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-  >
+<link rel="canonical" href="https://diwangames.online/faq.html">
 
-  <link
-    rel="canonical"
-    href="https://diwangames.online/faq.html"
-  >
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="DiwaSlot">
-  <meta property="og:title" content="FAQ - DiwaSlot">
-  <meta
-    property="og:description"
-    content="Frequently asked questions about DiwaSlot."
-  >
-  <meta
-    property="og:image"
-    content="https://i.ibb.co/dsNL4Xzt/logo.png"
-  >
-  <meta
-    property="og:url"
-    content="https://diwangames.online/faq.html"
-  >
+html{
+    scroll-behavior:smooth;
+}
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="FAQ - DiwaSlot">
-  <meta
-    name="twitter:description"
-    content="Frequently asked questions about DiwaSlot."
-  >
-  <meta
-    name="twitter:image"
-    content="https://i.ibb.co/dsNL4Xzt/logo.png"
-  >
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f8f3e7;
+    color:#171717;
+    line-height:1.6;
+}
 
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+a{
+    color:inherit;
+    text-decoration:none;
+}
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet"
-  >
+/* =========================
+   HEADER
+========================= */
 
-  <style>
+.header{
+    width:100%;
+    background:#fff;
+    border-bottom:1px solid #e7e0d2;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
 
-    /* =========================
-       ROOT
-    ========================= */
+.header-inner{
+    max-width:1160px;
+    margin:auto;
+    height:96px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 24px;
+}
 
-    :root {
-      --bg: #f7f3e9;
-      --panel: #fffdf8;
-      --text: #171717;
-      --muted: #667085;
-      --gold: #e9a927;
-      --gold-dark: #d89516;
-      --border: #e7e1d5;
-      --soft-gold: #f3e4bd;
+/* LOGO */
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    min-width:190px;
+}
+
+.brand-logo{
+    width:48px;
+    height:48px;
+    border-radius:12px;
+    object-fit:cover;
+    display:block;
+}
+
+.brand-text{
+    display:flex;
+    flex-direction:column;
+}
+
+.brand-name{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:21px;
+    font-weight:bold;
+    line-height:1;
+}
+
+.brand-subtitle{
+    font-size:10px;
+    font-weight:bold;
+    letter-spacing:2px;
+    color:#999;
+    margin-top:8px;
+}
+
+/* NAVIGATION */
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.nav a{
+    font-size:14px;
+    font-weight:600;
+    color:#686868;
+    transition:.2s;
+}
+
+.nav a:hover{
+    color:#111;
+}
+
+.nav a.active{
+    color:#111;
+}
+
+/* DOWNLOAD BUTTON */
+
+.download-btn{
+    background:#f5ae24;
+    color:#111 !important;
+    padding:14px 25px;
+    border-radius:13px;
+    font-size:14px !important;
+    font-weight:800 !important;
+    box-shadow:0 8px 20px rgba(245,174,36,.20);
+    transition:.2s;
+}
+
+.download-btn:hover{
+    transform:translateY(-2px);
+    background:#efa516;
+}
+
+/* MOBILE MENU */
+
+.menu-btn{
+    display:none;
+    border:0;
+    background:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    border-bottom:1px solid #e7e0d2;
+    background:
+        radial-gradient(circle at 80% 20%, rgba(245,174,36,.12), transparent 35%),
+        linear-gradient(135deg,#fffdf8,#f8f0dd);
+}
+
+.hero-inner{
+    max-width:1160px;
+    min-height:455px;
+    margin:auto;
+    padding:85px 24px 80px;
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.eyebrow{
+    color:#d99300;
+    font-size:12px;
+    font-weight:800;
+    letter-spacing:5px;
+    margin-bottom:25px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:72px;
+    line-height:.98;
+    letter-spacing:-3px;
+    font-weight:700;
+    max-width:750px;
+    margin-bottom:28px;
+}
+
+.hero p{
+    font-size:18px;
+    color:#45516b;
+    max-width:720px;
+    line-height:1.8;
+}
+
+/* =========================
+   FAQ SECTION
+========================= */
+
+.faq-section{
+    background:#f8f3e7;
+    padding:82px 24px 110px;
+}
+
+.faq-container{
+    max-width:930px;
+    margin:auto;
+}
+
+.section-label{
+    color:#d99300;
+    font-size:11px;
+    font-weight:800;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    margin-bottom:14px;
+}
+
+.section-title{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:48px;
+    line-height:1.05;
+    margin-bottom:45px;
+    letter-spacing:-1.5px;
+}
+
+/* FAQ BOX */
+
+.faq-list{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.faq-item{
+    background:#fff;
+    border:1px solid #e6dfd2;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(30,20,5,.03);
+}
+
+.faq-question{
+    width:100%;
+    border:0;
+    background:#fff;
+    padding:27px 28px;
+    text-align:left;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+    cursor:pointer;
+    font-size:17px;
+    font-weight:700;
+    color:#111;
+}
+
+.faq-question:hover{
+    background:#fffdf8;
+}
+
+.faq-icon{
+    width:34px;
+    height:34px;
+    min-width:34px;
+    border-radius:50%;
+    background:#f5ae24;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:400;
+    transition:.25s;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .35s ease;
+}
+
+.faq-answer-inner{
+    padding:0 28px 27px;
+    color:#58627a;
+    font-size:16px;
+    line-height:1.8;
+}
+
+.faq-item.open .faq-icon{
+    transform:rotate(45deg);
+}
+
+/* =========================
+   CONTACT CTA
+========================= */
+
+.cta{
+    max-width:930px;
+    margin:0 auto 20px;
+    background:#f3ad20;
+    border-radius:25px;
+    padding:55px 50px;
+    position:relative;
+    overflow:hidden;
+}
+
+.cta:after{
+    content:"";
+    position:absolute;
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.25);
+    right:-70px;
+    top:-80px;
+}
+
+.cta h2{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:42px;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.cta p{
+    max-width:600px;
+    color:#3d321b;
+    margin-bottom:25px;
+}
+
+.cta-btn{
+    display:inline-block;
+    background:#171717;
+    color:#fff;
+    padding:14px 24px;
+    border-radius:10px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:#171717;
+    color:#fff;
+    padding:55px 24px 35px;
+}
+
+.footer-inner{
+    max-width:1160px;
+    margin:auto;
+}
+
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+    padding-bottom:35px;
+    border-bottom:1px solid #333;
+}
+
+.footer-brand{
+    display:flex;
+    align-items:center;
+    gap:13px;
+}
+
+.footer-logo{
+    width:45px;
+    height:45px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.footer-brand-name{
+    font-family:Georgia, "Times New Roman", serif;
+    font-size:22px;
+}
+
+.footer-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    align-items:center;
+}
+
+.footer-links a{
+    color:#bbb;
+    font-size:14px;
+}
+
+.footer-links a:hover{
+    color:#fff;
+}
+
+.footer-bottom{
+    padding-top:25px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    color:#888;
+    font-size:13px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .nav{
+        gap:17px;
     }
 
-
-    /* =========================
-       RESET
-    ========================= */
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    .nav a{
+        font-size:13px;
     }
 
+    .hero h1{
+        font-size:60px;
+    }
+}
 
-    html {
-      scroll-behavior: smooth;
+@media(max-width:800px){
+
+    .header-inner{
+        height:78px;
     }
 
-
-    body {
-      font-family: "Inter", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.7;
+    .menu-btn{
+        display:block;
     }
 
-
-    a {
-      color: inherit;
-      text-decoration: none;
+    .nav{
+        display:none;
+        position:absolute;
+        top:78px;
+        left:0;
+        right:0;
+        background:#fff;
+        border-bottom:1px solid #ddd;
+        padding:20px 24px;
+        flex-direction:column;
+        align-items:stretch;
+        gap:0;
+        box-shadow:0 10px 25px rgba(0,0,0,.08);
     }
 
-
-    /* =========================
-       HEADER
-    ========================= */
-
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
-      background: rgba(255, 253, 248, 0.96);
-      border-bottom: 1px solid var(--border);
-
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
+    .nav.show{
+        display:flex;
     }
 
-
-    .nav {
-      max-width: 1180px;
-      min-height: 88px;
-
-      margin: auto;
-      padding: 0 28px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 28px;
+    .nav a{
+        padding:13px 0;
+        border-bottom:1px solid #eee;
     }
 
-
-    /* =========================
-       BRAND
-    ========================= */
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-
-      flex-shrink: 0;
+    .nav .download-btn{
+        text-align:center;
+        margin-top:12px;
+        border-bottom:0;
     }
 
-
-    .brand-logo {
-      width: 44px;
-      height: 44px;
-
-      display: block;
-
-      border-radius: 12px;
-
-      object-fit: cover;
-
-      background: #111;
+    .hero-inner{
+        min-height:auto;
+        padding:70px 24px;
     }
 
-
-    .brand-text strong {
-      display: block;
-
-      font-size: 18px;
-      font-weight: 700;
-      letter-spacing: -0.4px;
+    .hero h1{
+        font-size:52px;
+        letter-spacing:-2px;
     }
 
-
-    .brand-text span {
-      display: block;
-
-      margin-top: 1px;
-
-      color: #8a8a8a;
-
-      font-size: 10px;
-      font-weight: 600;
-
-      letter-spacing: 2px;
+    .section-title{
+        font-size:40px;
     }
 
-
-    /* =========================
-       NAVIGATION
-    ========================= */
-
-    .nav-links {
-      flex: 1;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      gap: 28px;
+    .footer-top{
+        flex-direction:column;
     }
 
+    .footer-bottom{
+        flex-direction:column;
+    }
+}
 
-    .nav-links a {
-      color: #666;
+@media(max-width:520px){
 
-      font-size: 14px;
-      font-weight: 600;
-
-      white-space: nowrap;
-
-      transition: color 0.2s ease;
+    .brand{
+        min-width:auto;
     }
 
-
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: #111;
+    .brand-logo{
+        width:42px;
+        height:42px;
     }
 
-
-    /* =========================
-       DOWNLOAD BUTTON
-    ========================= */
-
-    .download-btn {
-      min-width: 108px;
-
-      padding: 12px 20px;
-
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 12px;
-
-      background: linear-gradient(
-        135deg,
-        #f7bd43,
-        #e4a01e
-      );
-
-      color: #111;
-
-      font-size: 13px;
-      font-weight: 800;
-
-      box-shadow:
-        0 8px 20px rgba(220, 158, 32, 0.18);
-
-      transition: all 0.2s ease;
+    .brand-name{
+        font-size:19px;
     }
 
-
-    .download-btn:hover {
-      transform: translateY(-2px);
-
-      box-shadow:
-        0 12px 25px rgba(220, 158, 32, 0.25);
+    .brand-subtitle{
+        font-size:8px;
     }
 
-
-    /* =========================
-       HERO
-    ========================= */
-
-    .hero {
-      position: relative;
-
-      overflow: hidden;
-
-      padding: 95px 24px 75px;
-
-      background:
-        radial-gradient(
-          circle at 85% 20%,
-          rgba(236, 174, 45, 0.14),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #fffdf7 0%,
-          #f7f2e5 100%
-        );
-
-      border-bottom: 1px solid var(--border);
+    .hero-inner{
+        padding:55px 20px 65px;
     }
 
-
-    .hero::before {
-      content: "";
-
-      position: absolute;
-
-      width: 430px;
-      height: 430px;
-
-      right: -180px;
-      top: -190px;
-
-      border-radius: 50%;
-
-      background: rgba(234, 169, 39, 0.08);
-
-      filter: blur(10px);
+    .hero h1{
+        font-size:43px;
+        line-height:1;
     }
 
-
-    .hero-inner {
-      position: relative;
-
-      max-width: 1080px;
-
-      margin: auto;
+    .hero p{
+        font-size:16px;
     }
 
-
-    .eyebrow {
-      margin-bottom: 18px;
-
-      color: #d79618;
-
-      font-size: 11px;
-      font-weight: 800;
-
-      letter-spacing: 4px;
-      text-transform: uppercase;
+    .eyebrow{
+        font-size:10px;
+        letter-spacing:4px;
     }
 
-
-    .hero h1 {
-      max-width: 900px;
-
-      font-family:
-        "Playfair Display",
-        Georgia,
-        serif;
-
-      font-size: clamp(48px, 7vw, 82px);
-
-      line-height: 0.98;
-
-      letter-spacing: -3px;
-
-      font-weight: 700;
+    .faq-section{
+        padding:60px 18px 80px;
     }
 
-
-    .hero p {
-      max-width: 700px;
-
-      margin-top: 26px;
-
-      color: #596273;
-
-      font-size: 17px;
-
-      line-height: 1.8;
+    .section-title{
+        font-size:35px;
     }
 
-
-    /* =========================
-       FAQ SECTION
-    ========================= */
-
-    .faq-section {
-      padding: 80px 24px 90px;
+    .faq-question{
+        padding:22px 20px;
+        font-size:16px;
     }
 
-
-    .faq-container {
-      max-width: 950px;
-
-      margin: auto;
+    .faq-answer-inner{
+        padding:0 20px 22px;
+        font-size:15px;
     }
 
-
-    .section-heading {
-      margin-bottom: 35px;
+    .cta{
+        padding:40px 25px;
+        border-radius:20px;
     }
 
-
-    .section-heading span {
-      display: block;
-
-      margin-bottom: 8px;
-
-      color: #d79618;
-
-      font-size: 11px;
-      font-weight: 800;
-
-      letter-spacing: 3px;
-
-      text-transform: uppercase;
+    .cta h2{
+        font-size:34px;
     }
-
-
-    .section-heading h2 {
-      font-family:
-        "Playfair Display",
-        Georgia,
-        serif;
-
-      font-size: 42px;
-
-      line-height: 1.1;
-
-      letter-spacing: -1px;
-    }
-
-
-    /* =========================
-       FAQ ITEMS
-    ========================= */
-
-    .faq-list {
-      display: grid;
-
-      gap: 16px;
-    }
-
-
-    .faq-item {
-      overflow: hidden;
-
-      background: rgba(255, 253, 248, 0.92);
-
-      border: 1px solid var(--border);
-
-      border-radius: 18px;
-
-      box-shadow:
-        0 8px 25px rgba(35, 29, 18, 0.04);
-
-      transition: all 0.25s ease;
-    }
-
-
-    .faq-item:hover {
-      border-color: #ddcda9;
-
-      box-shadow:
-        0 20px 50px rgba(35, 29, 18, 0.08);
-
-      transform: translateY(-2px);
-    }
-
-
-    .faq-question {
-      width: 100%;
-
-      padding: 24px 28px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 20px;
-
-      border: 0;
-
-      background: transparent;
-
-      color: #171717;
-
-      font-family: inherit;
-
-      font-size: 17px;
-      font-weight: 700;
-
-      text-align: left;
-
-      cursor: pointer;
-    }
-
-
-    .faq-icon {
-      width: 34px;
-      height: 34px;
-
-      min-width: 34px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-
-      background: var(--soft-gold);
-
-      color: #9a6910;
-
-      font-size: 22px;
-      font-weight: 500;
-
-      transition: all 0.25s ease;
-    }
-
-
-    .faq-answer {
-      max-height: 0;
-
-      overflow: hidden;
-
-      padding: 0 28px;
-
-      color: #5d6675;
-
-      font-size: 15px;
-
-      line-height: 1.8;
-
-      transition:
-        max-height 0.35s ease,
-        padding 0.35s ease;
-    }
-
-
-    .faq-item.open .faq-answer {
-      max-height: 300px;
-
-      padding:
-        0 28px 25px;
-    }
-
-
-    .faq-item.open .faq-icon {
-      transform: rotate(45deg);
-
-      background: #eab03a;
-
-      color: #111;
-    }
-
-
-    .faq-answer a {
-      color: #b1760d;
-
-      font-weight: 600;
-
-      text-decoration: underline;
-
-      text-underline-offset: 3px;
-    }
-
-
-    /* =========================
-       CTA
-    ========================= */
-
-    .cta {
-      max-width: 950px;
-
-      margin:
-        0 auto 100px;
-
-      padding: 45px 40px;
-
-      border-radius: 24px;
-
-      background:
-        radial-gradient(
-          circle at 90% 10%,
-          rgba(255,255,255,0.25),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #efb43b,
-          #d99517
-        );
-
-      box-shadow:
-        0 20px 50px rgba(210, 145, 20, 0.20);
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 30px;
-    }
-
-
-    .cta h2 {
-      font-family:
-        "Playfair Display",
-        Georgia,
-        serif;
-
-      font-size: 32px;
-
-      line-height: 1.2;
-    }
-
-
-    .cta p {
-      margin-top: 8px;
-
-      color: rgba(17, 17, 17, 0.72);
-
-      font-size: 14px;
-    }
-
-
-    .cta-button {
-      flex-shrink: 0;
-
-      padding: 14px 24px;
-
-      border-radius: 12px;
-
-      background: #111;
-
-      color: #fff;
-
-      font-size: 13px;
-      font-weight: 700;
-
-      transition: all 0.2s ease;
-    }
-
-
-    .cta-button:hover {
-      transform: translateY(-2px);
-
-      background: #242424;
-    }
-
-
-    /* =========================
-       FOOTER
-    ========================= */
-
-    footer {
-      background: #f1ecdf;
-
-      border-top: 1px solid var(--border);
-    }
-
-
-    .footer-inner {
-      max-width: 1180px;
-
-      margin: auto;
-
-      padding: 35px 28px;
-
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-
-      gap: 25px;
-    }
-
-
-    .footer-brand {
-      font-size: 15px;
-
-      font-weight: 700;
-    }
-
-
-    .footer-brand span {
-      display: block;
-
-      margin-top: 4px;
-
-      color: #858585;
-
-      font-size: 11px;
-    }
-
-
-    .footer-links {
-      display: flex;
-
-      flex-wrap: wrap;
-
-      gap: 18px;
-    }
-
-
-    .footer-links a {
-      color: #666;
-
-      font-size: 12px;
-
-      font-weight: 600;
-    }
-
-
-    .footer-links a:hover {
-      color: #111;
-    }
-
-
-    /* =========================
-       MOBILE
-    ========================= */
-
-    @media (max-width: 800px) {
-
-      .nav {
-        min-height: auto;
-
-        padding: 16px 18px;
-
-        flex-wrap: wrap;
-
-        gap: 15px;
-      }
-
-
-      .nav-links {
-        order: 3;
-
-        width: 100%;
-
-        justify-content: flex-start;
-
-        overflow-x: auto;
-
-        padding-bottom: 4px;
-
-        gap: 20px;
-      }
-
-
-      .nav-links a {
-        font-size: 13px;
-
-        white-space: nowrap;
-      }
-
-
-      .download-btn {
-        min-width: auto;
-
-        padding: 10px 16px;
-      }
-
-
-      .hero {
-        padding:
-          70px 20px 55px;
-      }
-
-
-      .hero h1 {
-        font-size: 52px;
-
-        letter-spacing: -2px;
-      }
-
-
-      .hero p {
-        font-size: 15px;
-      }
-
-
-      .faq-section {
-        padding:
-          60px 18px 70px;
-      }
-
-
-      .section-heading h2 {
-        font-size: 34px;
-      }
-
-
-      .faq-question {
-        padding: 20px;
-
-        font-size: 15px;
-      }
-
-
-      .faq-answer {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-
-      .faq-item.open .faq-answer {
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-bottom: 22px;
-      }
-
-
-      .cta {
-        margin:
-          0 18px 70px;
-
-        padding: 30px 24px;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-      }
-
-
-      .cta h2 {
-        font-size: 27px;
-      }
-
-
-      .footer-inner {
-        padding: 30px 20px;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-      }
-
-    }
-
-  </style>
+}
+</style>
 </head>
-
 
 <body>
 
+<!-- =========================
+     HEADER
+========================= -->
 
-  <!-- =========================
-       HEADER
-  ========================= -->
+<header class="header">
 
-  <header class="header">
+    <div class="header-inner">
 
-    <nav class="nav">
+        <a href="index.html" class="brand">
+
+            <!-- IMPORTANT:
+                 logo.png must be in the same GitHub folder
+            -->
+            <img
+                src="logo.png"
+                alt="DiwaSlot Logo"
+                class="brand-logo"
+            >
+
+            <div class="brand-text">
+                <div class="brand-name">DiwaSlot</div>
+                <div class="brand-subtitle">APP INFORMATION</div>
+            </div>
+
+        </a>
 
 
-      <!-- LOGO -->
-
-      <a href="/" class="brand">
-
-        <img
-          src="https://i.ibb.co/dsNL4Xzt/logo.png"
-          alt="DiwaSlot Logo"
-          class="brand-logo"
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+            aria-label="Open menu"
         >
-
-        <div class="brand-text">
-
-          <strong>DiwaSlot</strong>
-
-          <span>
-            APP INFORMATION
-          </span>
-
-        </div>
-
-      </a>
+            ☰
+        </button>
 
 
-      <!-- NAVIGATION -->
+        <nav class="nav" id="mainNav">
 
-      <div class="nav-links">
+            <a href="index.html#features">
+                Features
+            </a>
 
-        <a href="/#features">
-          Features
-        </a>
+            <a href="index.html#screenshots">
+                Screenshots
+            </a>
 
-        <a href="/#screenshots">
-          Screenshots
-        </a>
+            <a href="about-us.html">
+                About
+            </a>
 
-        <a href="/about-us.html">
-          About
-        </a>
+            <a href="how-to-play.html">
+                How to Play
+            </a>
 
-        <a href="/how-to-play.html">
-          How to Play
-        </a>
+            <a href="faq.html" class="active">
+                FAQ
+            </a>
 
-        <a
-          href="/faq.html"
-          class="active"
-        >
-          FAQ
-        </a>
+            <a href="index.html#privacy">
+                Privacy
+            </a>
 
-        <a href="/responsible-gaming.html">
-          Privacy
-        </a>
+            <a href="terms-and-conditions.html">
+                Terms
+            </a>
 
-        <a href="/terms-and-conditions.html">
-          Terms
-        </a>
+            <a href="index.html#download" class="download-btn">
+                DOWNLOAD
+            </a>
 
-      </div>
+        </nav>
 
+    </div>
 
-      <!-- DOWNLOAD -->
-
-      <a
-        href="/#download"
-        class="download-btn"
-      >
-        DOWNLOAD
-      </a>
-
-    </nav>
-
-  </header>
+</header>
 
 
+<!-- =========================
+     HERO
+========================= -->
 
-  <!-- =========================
-       HERO
-  ========================= -->
-
-  <section class="hero">
+<section class="hero">
 
     <div class="hero-inner">
 
-      <div class="eyebrow">
-        HELP & INFORMATION
-      </div>
+        <div class="hero-content">
 
-      <h1>
-        Frequently Asked
-        Questions
-      </h1>
+            <div class="eyebrow">
+                HELP & INFORMATION
+            </div>
 
-      <p>
-        Find quick answers about DiwaSlot, including
-        app downloads, account setup, age requirements,
-        bonuses, support and privacy.
-      </p>
+            <h1>
+                Frequently Asked
+                Questions
+            </h1>
+
+            <p>
+                Find quick answers about DiwaSlot, including app
+                downloads, account setup, age requirements,
+                bonuses, support and privacy.
+            </p>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
 
 
+<!-- =========================
+     FAQ
+========================= -->
 
-  <!-- =========================
-       FAQ
-  ========================= -->
-
-  <main class="faq-section">
+<section class="faq-section">
 
     <div class="faq-container">
 
+        <div class="section-label">
+            FAQ
+        </div>
 
-      <div class="section-heading">
-
-        <span>
-          FAQ
-        </span>
-
-        <h2>
-          Everything you need to know.
+        <h2 class="section-title">
+            Everything you need to know.
         </h2>
 
-      </div>
+
+        <div class="faq-list">
 
 
-      <div class="faq-list">
+            <!-- FAQ 1 -->
+
+            <div class="faq-item open">
+
+                <button
+                    class="faq-question"
+                    onclick="toggleFaq(this)"
+                >
+
+                    <span>
+                        How do I download DiwaSlot?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <div class="faq-answer-inner">
+
+                        You can download DiwaSlot directly from
+                        our homepage by clicking the download
+                        button.
+
+                    </div>
+
+                </div>
+
+            </div>
 
 
-        <!-- FAQ 1 -->
+            <!-- FAQ 2 -->
 
-        <div class="faq-item open">
+            <div class="faq-item">
 
-          <button
-            class="faq-question"
-            type="button"
-          >
+                <button
+                    class="faq-question"
+                    onclick="toggleFaq(this)"
+                >
 
-            <span>
-              How do I download DiwaSlot?
-            </span>
+                    <span>
+                        How do I create an account?
+                    </span>
 
-            <span class="faq-icon">
-              +
-            </span>
+                    <span class="faq-icon">
+                        +
+                    </span>
 
-          </button>
+                </button>
 
-          <div class="faq-answer">
+                <div class="faq-answer">
 
-            You can download DiwaSlot directly from our
-            <a href="/">
-              homepage
+                    <div class="faq-answer-inner">
+
+                        After installing the app, open it and
+                        follow the on-screen instructions to
+                        sign up using your mobile number or
+                        email address.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    onclick="toggleFaq(this)"
+                >
+
+                    <span>
+                        Is there an age requirement?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <div class="faq-answer-inner">
+
+                        Yes. DiwaSlot is intended for users
+                        who are 18 years of age or older.
+                        Please follow the laws and regulations
+                        applicable in your location.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 4 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    onclick="toggleFaq(this)"
+                >
+
+                    <span>
+                        How do bonuses work?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <div class="faq-answer-inner">
+
+                        Bonuses and offers may be available
+                        from time to time within the app.
+                        Details, eligibility requirements and
+                        terms for any bonus are shown inside
+                        the app itself.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 5 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    onclick="toggleFaq(this)"
+                >
+
+                    <span>
+                        Who do I contact for support?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <div class="faq-answer-inner">
+
+                        You can reach out to us through our
+                        <a
+                            href="contact-us.html"
+                            style="color:#d99300;font-weight:bold;"
+                        >
+                            Contact Us
+                        </a>
+                        page.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 6 -->
+
+            <div class="faq-item">
+
+                <button
+                    class="faq-question"
+                    onclick="toggleFaq(this)"
+                >
+
+                    <span>
+                        Is my data safe?
+                    </span>
+
+                    <span class="faq-icon">
+                        +
+                    </span>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <div class="faq-answer-inner">
+
+                        We take user privacy seriously.
+                        Please review our privacy information
+                        and the applicable policies for full
+                        details about data handling and
+                        protection.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- =========================
+             CONTACT CTA
+        ========================= -->
+
+        <div class="cta" style="margin-top:70px;">
+
+            <h2>
+                Still have questions?
+            </h2>
+
+            <p>
+                Visit our contact page and get in touch
+                with our support team.
+            </p>
+
+            <a
+                href="contact-us.html"
+                class="cta-btn"
+            >
+                CONTACT US
             </a>
-            by clicking the download button.
-
-          </div>
 
         </div>
-
-
-
-        <!-- FAQ 2 -->
-
-        <div class="faq-item">
-
-          <button
-            class="faq-question"
-            type="button"
-          >
-
-            <span>
-              How do I create an account?
-            </span>
-
-            <span class="faq-icon">
-              +
-            </span>
-
-          </button>
-
-          <div class="faq-answer">
-
-            After installing the app, open it and follow
-            the on-screen instructions to sign up using
-            your mobile number or email.
-
-          </div>
-
-        </div>
-
-
-
-        <!-- FAQ 3 -->
-
-        <div class="faq-item">
-
-          <button
-            class="faq-question"
-            type="button"
-          >
-
-            <span>
-              Is there an age requirement?
-            </span>
-
-            <span class="faq-icon">
-              +
-            </span>
-
-          </button>
-
-          <div class="faq-answer">
-
-            Yes. DiwaSlot is intended for users who are
-            18 years of age or older.
-
-          </div>
-
-        </div>
-
-
-
-        <!-- FAQ 4 -->
-
-        <div class="faq-item">
-
-          <button
-            class="faq-question"
-            type="button"
-          >
-
-            <span>
-              How do bonuses work?
-            </span>
-
-            <span class="faq-icon">
-              +
-            </span>
-
-          </button>
-
-          <div class="faq-answer">
-
-            Bonuses and offers may be available from time
-            to time within the app. Details and terms for
-            any bonus are shown inside the app itself.
-
-          </div>
-
-        </div>
-
-
-
-        <!-- FAQ 5 -->
-
-        <div class="faq-item">
-
-          <button
-            class="faq-question"
-            type="button"
-          >
-
-            <span>
-              Who do I contact for support?
-            </span>
-
-            <span class="faq-icon">
-              +
-            </span>
-
-          </button>
-
-          <div class="faq-answer">
-
-            You can reach out to us through our
-            <a href="/contact-us.html">
-              Contact Us
-            </a>
-            page.
-
-          </div>
-
-        </div>
-
-
-
-        <!-- FAQ 6 -->
-
-        <div class="faq-item">
-
-          <button
-            class="faq-question"
-            type="button"
-          >
-
-            <span>
-              Is my data safe?
-            </span>
-
-            <span class="faq-icon">
-              +
-            </span>
-
-          </button>
-
-          <div class="faq-answer">
-
-            We take user privacy seriously. Please read
-            our
-            <a href="/responsible-gaming.html">
-              Privacy Policy
-            </a>
-            for full details.
-
-          </div>
-
-        </div>
-
-
-      </div>
 
     </div>
 
-  </main>
+</section>
 
 
+<!-- =========================
+     FOOTER
+========================= -->
 
-  <!-- =========================
-       CTA
-  ========================= -->
-
-  <section class="cta">
-
-    <div>
-
-      <h2>
-        Still have questions?
-      </h2>
-
-      <p>
-        Visit our contact page and get in touch
-        with our support team.
-      </p>
-
-    </div>
-
-
-    <a
-      href="/contact-us.html"
-      class="cta-button"
-    >
-      CONTACT US
-    </a>
-
-  </section>
-
-
-
-  <!-- =========================
-       FOOTER
-  ========================= -->
-
-  <footer>
+<footer class="footer">
 
     <div class="footer-inner">
 
+        <div class="footer-top">
 
-      <div class="footer-brand">
+            <a href="index.html" class="footer-brand">
 
-        DiwaSlot
+                <img
+                    src="logo.png"
+                    alt="DiwaSlot"
+                    class="footer-logo"
+                >
 
-        <span>
-          © 2026 DiwaSlot. All rights reserved.
-        </span>
+                <span class="footer-brand-name">
+                    DiwaSlot
+                </span>
 
-      </div>
+            </a>
 
 
-      <div class="footer-links">
+            <div class="footer-links">
 
-        <a href="/">
-          Home
-        </a>
+                <a href="index.html">
+                    Home
+                </a>
 
-        <a href="/about-us.html">
-          About
-        </a>
+                <a href="about-us.html">
+                    About
+                </a>
 
-        <a href="/how-to-play.html">
-          How to Play
-        </a>
+                <a href="how-to-play.html">
+                    How to Play
+                </a>
 
-        <a href="/faq.html">
-          FAQ
-        </a>
+                <a href="faq.html">
+                    FAQ
+                </a>
 
-        <a href="/contact-us.html">
-          Contact
-        </a>
+                <a href="responsible-gaming.html">
+                    Responsible Gaming
+                </a>
 
-        <a href="/terms-and-conditions.html">
-          Terms
-        </a>
+                <a href="terms-and-conditions.html">
+                    Terms
+                </a>
 
-        <a href="/responsible-gaming.html">
-          Responsible Gaming
-        </a>
+                <a href="contact-us.html">
+                    Contact
+                </a>
 
-      </div>
+            </div>
 
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div>
+                © 2026 DiwaSlot. All rights reserved.
+            </div>
+
+            <div>
+                18+ | Play Responsibly
+            </div>
+
+        </div>
 
     </div>
 
-  </footer>
+</footer>
 
 
+<!-- =========================
+     JAVASCRIPT
+========================= -->
 
-  <!-- =========================
-       FAQ JAVASCRIPT
-  ========================= -->
+<script>
 
-  <script>
+/* MOBILE MENU */
 
-    const faqQuestions =
-      document.querySelectorAll(
-        ".faq-question"
-      );
+function toggleMenu(){
 
+    const nav = document.getElementById("mainNav");
 
-    faqQuestions.forEach(
-      function(question) {
+    nav.classList.toggle("show");
 
-        question.addEventListener(
-          "click",
-          function() {
-
-            const currentItem =
-              question.parentElement;
-
-            const isOpen =
-              currentItem.classList.contains(
-                "open"
-              );
+}
 
 
-            /* Close all */
+/* FAQ ACCORDION */
 
-            document
-              .querySelectorAll(".faq-item")
-              .forEach(
-                function(item) {
+function toggleFaq(button){
 
-                  item.classList.remove(
-                    "open"
-                  );
+    const item = button.parentElement;
 
-                }
-              );
+    const answer = item.querySelector(".faq-answer");
+
+    const isOpen = item.classList.contains("open");
 
 
-            /* Open selected */
+    /* Close all FAQ items */
 
-            if (!isOpen) {
+    document.querySelectorAll(".faq-item").forEach(function(faq){
 
-              currentItem.classList.add(
-                "open"
-              );
+        faq.classList.remove("open");
 
-            }
+        const faqAnswer = faq.querySelector(".faq-answer");
 
-          }
-        );
+        faqAnswer.style.maxHeight = null;
 
-      }
-    );
+    });
 
-  </script>
 
+    /* Open selected item */
+
+    if(!isOpen){
+
+        item.classList.add("open");
+
+        answer.style.maxHeight = answer.scrollHeight + "px";
+
+    }
+
+}
+
+
+/* OPEN FIRST FAQ ON PAGE LOAD */
+
+window.addEventListener("load", function(){
+
+    const firstItem = document.querySelector(".faq-item.open");
+
+    if(firstItem){
+
+        const answer = firstItem.querySelector(".faq-answer");
+
+        answer.style.maxHeight = answer.scrollHeight + "px";
+
+    }
+
+});
+
+
+/* CLOSE MOBILE MENU AFTER CLICK */
+
+document.querySelectorAll(".nav a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        document.getElementById("mainNav").classList.remove("show");
+
+    });
+
+});
+
+</script>
 
 </body>
-
 </html>
