@@ -3,51 +3,772 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Play - DiwaSlot</title>
-<script src="https://cdn.tailwindcss.com"></script>
+
+<title>How to Play DiwaSlot – Guide &amp; Getting Started</title>
+<meta name="description" content="Learn how to get started with DiwaSlot, download the app, create an account, explore the games and play responsibly.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://diwangames.online/how-to-play.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DiwaSlot">
+<meta property="og:title" content="How to Play DiwaSlot – Guide &amp; Getting Started">
+<meta property="og:description" content="A simple guide to getting started with DiwaSlot.">
+<meta property="og:image" content="https://i.ibb.co/dsNL4XZt/logo.png">
+<meta property="og:url" content="https://diwangames.online/how-to-play.html">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"How to Play DiwaSlot",
+  "url":"https://diwangames.online/how-to-play.html",
+  "description":"Guide to getting started with DiwaSlot.",
+  "isPartOf":{
+    "@type":"WebSite",
+    "name":"DiwaSlot",
+    "url":"https://diwangames.online/"
+  }
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#f6f3ec;
+  --panel:#ffffff;
+  --panel2:#fbfaf7;
+  --gold:#f6c453;
+  --gold2:#d99b24;
+  --text:#1d1d1f;
+  --muted:#6f7278;
+  --line:rgba(31,31,31,.10);
+  --dark:#202124;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,Arial,sans-serif;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(var(--max),calc(100% - 36px));margin:auto}
+
+/* Header — matched to the main website */
+.header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(255,253,248,.90);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line);
+}
+.nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-logo{
+  width:43px;
+  height:43px;
+  border-radius:12px;
+  object-fit:cover;
+  border:1px solid rgba(246,196,83,.4);
+}
+.brand-name{
+  font-weight:900;
+  letter-spacing:-.5px;
+  font-size:18px;
+}
+.brand-sub{
+  font-size:10px;
+  color:#777d88;
+  text-transform:uppercase;
+  letter-spacing:1.7px;
+}
+.navlinks{
+  display:flex;
+  gap:28px;
+  color:#666a72;
+  font-size:13px;
+  font-weight:600;
+}
+.navlinks a:hover{color:#111}
+.nav-btn,.gold-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,var(--gold),var(--gold2));
+  color:#111;
+  font-weight:900;
+  border-radius:12px;
+  box-shadow:0 10px 30px rgba(246,196,83,.13);
+  transition:.2s;
+}
+.nav-btn{padding:11px 17px;font-size:12px}
+.gold-btn{padding:15px 24px;font-size:14px}
+.nav-btn:hover,.gold-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 35px rgba(246,196,83,.22);
+}
+
+/* Premium page hero */
+.hero{
+  position:relative;
+  min-height:540px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 78% 25%,rgba(246,196,83,.18),transparent 25%),
+    radial-gradient(circle at 12% 78%,rgba(92,78,40,.11),transparent 30%),
+    linear-gradient(120deg,#fffdf8,#f5f0e4 55%,#fffdf8);
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  opacity:.22;
+  background-image:
+    linear-gradient(rgba(80,70,45,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(80,70,45,.055) 1px,transparent 1px);
+  background-size:70px 70px;
+  mask-image:linear-gradient(to bottom,black,transparent);
+}
+.hero-grid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.08fr .92fr;
+  gap:70px;
+  align-items:center;
+  padding:78px 0;
+}
+.kicker{
+  color:var(--gold);
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:17px;
+}
+h1{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(48px,7vw,82px);
+  line-height:.98;
+  margin:0;
+  letter-spacing:-3px;
+}
+.hero-copy{
+  max-width:650px;
+  color:#666a72;
+  font-size:16px;
+  margin:24px 0 30px;
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap}
+.dark-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border:1px solid var(--line);
+  padding:14px 22px;
+  border-radius:12px;
+  font-size:13px;
+  font-weight:800;
+  background:rgba(255,255,255,.72);
+}
+.dark-btn:hover{background:rgba(246,196,83,.12)}
+.trust-row{
+  display:flex;
+  gap:25px;
+  margin-top:38px;
+  flex-wrap:wrap;
+}
+.trust{
+  border-left:1px solid #3b3e44;
+  padding-left:14px;
+}
+.trust strong{display:block;font-size:12px}
+.trust small{display:block;color:#7a7d83;font-size:10px;margin-top:3px}
+
+/* Hero visual */
+.hero-visual{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:350px;
+}
+.hero-logo-wrap{text-align:center}
+.hero-logo-ring{
+  position:relative;
+  width:285px;
+  height:285px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#111318;
+  box-shadow:0 30px 70px rgba(0,0,0,.22);
+}
+.hero-logo-ring:before{
+  content:"";
+  position:absolute;
+  inset:12px;
+  border-radius:50%;
+  border:1px solid rgba(246,196,83,.42);
+}
+.hero-logo{
+  width:185px;
+  height:185px;
+  object-fit:cover;
+  border-radius:36px;
+  position:relative;
+  z-index:2;
+}
+.hero-logo-caption{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:18px;
+  background:#fff;
+  padding:10px 16px;
+  border-radius:999px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+}
+.caption-dot{
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--gold);
+}
+
+/* Sections */
+.section{padding:88px 0}
+.section.dark-section{
+  background:#202124;
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.section.dark-section:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 80% 10%,rgba(246,196,83,.12),transparent 30%);
+  pointer-events:none;
+}
+.section-head{
+  position:relative;
+  z-index:1;
+  max-width:760px;
+  margin:0 auto 42px;
+  text-align:center;
+}
+.eyebrow{
+  color:var(--gold);
+  font-size:10px;
+  font-weight:800;
+  letter-spacing:2.6px;
+  text-transform:uppercase;
+}
+.section-head h2{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:clamp(36px,5vw,55px);
+  line-height:1.05;
+  margin:9px 0 14px;
+}
+.section-head p{
+  margin:0;
+  color:#777d88;
+  font-size:14px;
+}
+.dark-section .section-head p{color:#b5b8bf}
+
+.steps{
+  position:relative;
+  z-index:1;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+.step-card{
+  background:#fff;
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:28px 24px;
+  min-height:245px;
+  box-shadow:0 14px 35px rgba(0,0,0,.08);
+  transition:.2s;
+}
+.step-card:hover{transform:translateY(-4px)}
+.step-number{
+  width:46px;
+  height:46px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:14px;
+  background:rgba(246,196,83,.16);
+  color:#8b6517;
+  font-weight:900;
+  font-size:14px;
+  margin-bottom:22px;
+}
+.step-card h3{font-size:18px;margin:0 0 10px}
+.step-card p{font-size:12px;color:#666a72;margin:0;line-height:1.75}
+
+.guide-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:22px;
+}
+.about-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,.04);
+}
+.about-card h2{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:38px;
+  line-height:1.1;
+  margin:10px 0 18px;
+}
+.about-card h3{font-size:20px;margin:10px 0 15px}
+.about-card p,.about-card li{
+  color:#666a72;
+  font-size:13px;
+}
+.about-card ul{padding-left:20px;margin:0}
+.about-card li{margin:9px 0}
+
+.notice{
+  max-width:900px;
+  margin:0 auto 55px;
+  padding:17px 19px;
+  border-radius:14px;
+  border:1px solid rgba(246,196,83,.2);
+  background:rgba(246,196,83,.10);
+  color:#666a72;
+  font-size:11px;
+  text-align:center;
+}
+
+/* CTA */
+.download-band{
+  padding:82px 0;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(246,196,83,.14),transparent 35%),
+    linear-gradient(180deg,#fbfaf7 0%,#f4efe4 100%);
+  border-top:1px solid rgba(246,196,83,.12);
+  border-bottom:1px solid var(--line);
+}
+.download-band h2{
+  font-family:"Playfair Display",Georgia,serif;
+  font-size:45px;
+  margin:8px 0;
+}
+.download-band p{
+  color:#6b6f76;
+  max-width:580px;
+  margin:0 auto 28px;
+  font-size:13px;
+}
+
+/* Footer */
+.footer{
+  border-top:1px solid var(--line);
+  padding:45px 0 95px;
+  color:#6e747f;
+}
+.footer-grid{
+  display:flex;
+  justify-content:space-between;
+  gap:25px;
+  align-items:center;
+}
+.footer-brand{font-weight:900;color:#202124}
+.footer p{font-size:11px;margin:5px 0 0}
+.footer-links{
+  display:flex;
+  gap:20px;
+  font-size:11px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.footer-links a:hover{color:#111}
+.mobile-cta{display:none}
+
+/* Responsive */
+@media(max-width:900px){
+  .navlinks{display:none}
+  .hero-grid{
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+    padding:60px 0 70px;
+  }
+  .hero-copy{margin-left:auto;margin-right:auto}
+  .hero-actions,.trust-row{justify-content:center}
+  .hero-visual{order:-1;min-height:auto}
+  .hero-logo-ring{width:225px;height:225px}
+  .hero-logo{width:145px;height:145px;border-radius:28px}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .guide-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  body{padding-bottom:68px}
+  .container{width:calc(100% - 28px)}
+  .nav{height:64px}
+  .brand{gap:9px}
+  .brand-logo{width:38px;height:38px;border-radius:11px}
+  .brand-name{font-size:16px}
+  .brand-sub{display:none}
+  .nav-btn{padding:9px 12px;border-radius:10px;font-size:11px}
+
+  .hero{
+    min-height:auto;
+    background:
+      radial-gradient(circle at 50% 7%,rgba(246,196,83,.12),transparent 28%),
+      linear-gradient(180deg,#fffdf8 0%,#f7f2e8 55%,#fffdf8 100%);
+  }
+  .hero-grid{padding:42px 0 48px;gap:28px}
+  .hero-visual{min-height:250px}
+  .hero-logo-ring{width:205px;height:205px}
+  .hero-logo{width:132px;height:132px}
+  .hero-logo-caption{margin-top:13px;font-size:9px;padding:8px 13px}
+  .kicker{font-size:9px;letter-spacing:2.4px;margin-bottom:11px}
+  h1{font-size:44px;letter-spacing:-1.8px}
+  .hero-copy{font-size:14px;margin:18px 0 24px}
+  .hero-actions{width:100%}
+  .hero-actions .gold-btn,.hero-actions .dark-btn{flex:1;min-width:0}
+  .trust-row{gap:12px;margin-top:28px}
+  .trust{padding-left:10px}
+  .trust strong{font-size:10px}
+  .trust small{font-size:8px}
+
+  .section{padding:64px 0}
+  .section-head{margin-bottom:30px}
+  .section-head h2{font-size:38px}
+  .steps{grid-template-columns:1fr}
+  .step-card{min-height:auto;padding:24px}
+  .guide-grid{gap:14px}
+  .about-card{padding:24px}
+  .about-card h2{font-size:32px}
+  .download-band{padding:65px 0}
+  .download-band h2{font-size:36px}
+  .footer-grid{display:block}
+  .footer-links{justify-content:flex-start;margin-top:20px}
+  .mobile-cta{
+    display:block;
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:120;
+    padding:10px 14px;
+    background:rgba(255,253,248,.96);
+    backdrop-filter:blur(18px);
+    border-top:1px solid rgba(246,196,83,.14);
+  }
+  .mobile-cta a{
+    display:flex;
+    height:46px;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    border-radius:11px;
+    font-size:12px;
+  }
+}
+</style>
 </head>
-<body class="bg-white text-gray-800">
-  <div class="max-w-3xl mx-auto px-4 py-10">
-    <h1 class="text-3xl font-bold mb-6">How to Play</h1>
 
-    <p class="mb-6 leading-relaxed">
-      Getting started with DiwaSlot is quick and simple. Follow the steps below to
-      download and start playing.
-    </p>
+<body>
 
-    <ol class="space-y-6">
-      <li>
-        <h2 class="text-lg font-semibold">1. Download the App</h2>
-        <p class="mt-1 leading-relaxed">
-          Visit our homepage and click the download button to get the DiwaSlot app
-          on your device.
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="https://diwangames.online/" aria-label="DiwaSlot home">
+      <img class="brand-logo"
+           src="https://i.ibb.co/dsNL4XZt/logo.png"
+           alt="DiwaSlot logo"
+           onerror="this.style.display='none'">
+      <div>
+        <div class="brand-name">DiwaSlot</div>
+        <div class="brand-sub">App Information</div>
+      </div>
+    </a>
+
+    <nav class="navlinks">
+      <a href="https://diwangames.online/">Home</a>
+      <a href="https://diwangames.online/#features">Features</a>
+      <a href="https://diwangames.online/how-to-play.html" aria-current="page">How to Play</a>
+      <a href="https://diwangames.online/faq.html">FAQ</a>
+      <a href="https://diwangames.online/#privacy">Privacy</a>
+      <a href="https://diwangames.online/#terms">Terms</a>
+    </nav>
+
+    <a class="nav-btn"
+       href="https://sharediwaslot.win?pid=524071561&amp;pkg=com.diwaslot119.app"
+       target="_blank"
+       rel="noopener noreferrer">
+      DOWNLOAD
+    </a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="kicker">Simple Getting Started Guide</div>
+      <h1>How to Play DiwaSlot</h1>
+      <p class="hero-copy">
+        Everything you need to know to get started. Follow the steps below,
+        review the important information and use gaming services responsibly.
+      </p>
+
+      <div class="hero-actions">
+        <a class="gold-btn" href="#steps">Start the Guide</a>
+        <a class="dark-btn" href="https://diwangames.online/">Back to Home</a>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust">
+          <strong>01 · Download</strong>
+          <small>Open the provided access destination</small>
+        </div>
+        <div class="trust">
+          <strong>02 · Account</strong>
+          <small>Create your account</small>
+        </div>
+        <div class="trust">
+          <strong>03 · Explore</strong>
+          <small>Review available games</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-logo-wrap">
+        <div class="hero-logo-ring">
+          <img class="hero-logo"
+               src="https://i.ibb.co/dsNL4XZt/logo.png"
+               alt="DiwaSlot app logo"
+               onerror="this.style.display='none'">
+        </div>
+        <div class="hero-logo-caption">
+          <span class="caption-dot"></span>
+          DiwaSlot Guide
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="steps">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Step by Step</div>
+      <h2>Get Started in Four Steps</h2>
+      <p>Follow the same simple flow from download to responsible use.</p>
+    </div>
+
+    <div class="steps">
+      <article class="step-card">
+        <div class="step-number">01</div>
+        <h3>Download the App</h3>
+        <p>
+          Visit the homepage and use the download button to open the currently
+          provided DiwaSlot access destination on your device.
         </p>
-      </li>
-      <li>
-        <h2 class="text-lg font-semibold">2. Create an Account</h2>
-        <p class="mt-1 leading-relaxed">
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">02</div>
+        <h3>Create an Account</h3>
+        <p>
           Open the app and sign up using your mobile number or email address.
           Make sure you meet the minimum age requirement of 18 years.
         </p>
-      </li>
-      <li>
-        <h2 class="text-lg font-semibold">3. Explore the Games</h2>
-        <p class="mt-1 leading-relaxed">
-          Browse through our collection of games and choose the one you'd like to play.
-        </p>
-      </li>
-      <li>
-        <h2 class="text-lg font-semibold">4. Play Responsibly</h2>
-        <p class="mt-1 leading-relaxed">
-          Set a budget for yourself and always play for entertainment purposes only.
-          Read our <a href="responsible-gaming.html" class="text-blue-600 underline">Responsible Gaming</a> page for tips.
-        </p>
-      </li>
-    </ol>
+      </article>
 
-    <div class="mt-10 pt-6 border-t text-sm text-gray-500">
-      <a href="index.html" class="text-blue-600 underline">← Back to Home</a>
+      <article class="step-card">
+        <div class="step-number">03</div>
+        <h3>Explore the Games</h3>
+        <p>
+          Browse through the available collection of games and choose the one
+          you would like to explore.
+        </p>
+      </article>
+
+      <article class="step-card">
+        <div class="step-number">04</div>
+        <h3>Play Responsibly</h3>
+        <p>
+          Set a budget for yourself and use gaming services for entertainment
+          purposes only. Check the applicable rules in your location.
+        </p>
+      </article>
     </div>
   </div>
+</section>
+
+<section class="section dark-section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Before You Start</div>
+      <h2>Important Things to Check</h2>
+      <p>Take a moment to review the basics before using any gaming service.</p>
+    </div>
+
+    <div class="guide-grid">
+      <div class="about-card">
+        <div class="eyebrow">Quick Checklist</div>
+        <h2>Know Before You Play.</h2>
+        <p>
+          Make sure you understand the service you are using and the
+          requirements that apply to you.
+        </p>
+        <ul>
+          <li>Check device and application compatibility.</li>
+          <li>Review the application's terms and privacy information.</li>
+          <li>Follow the applicable age requirements.</li>
+          <li>Check whether gaming services are legally permitted in your location.</li>
+          <li>Understand the financial risks before participating.</li>
+        </ul>
+      </div>
+
+      <div class="about-card">
+        <div class="eyebrow">Responsible Gaming</div>
+        <h3>Keep It Within Your Limits.</h3>
+        <p>
+          Gaming involving money can carry financial risk. Set a personal
+          budget, never spend more than you can afford to lose, and stop if
+          playing is no longer enjoyable.
+        </p>
+        <a class="dark-btn"
+           href="https://diwangames.online/responsible-gaming.html"
+           style="margin-top:12px">
+          Read Responsible Gaming
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="notice">
+      <strong style="color:#303136">Important:</strong>
+      Application availability, features, requirements and external access
+      destinations may change. Always review the applicable terms, age
+      requirements and laws in your location before using a gaming service.
+    </div>
+
+    <div class="section-head">
+      <div class="eyebrow">Need More Information?</div>
+      <h2>Explore the DiwaSlot Website</h2>
+      <p>Use the main website to find FAQs, screenshots and additional information.</p>
+    </div>
+
+    <div class="guide-grid">
+      <div class="about-card">
+        <div class="eyebrow">Frequently Asked Questions</div>
+        <h3>Have a Question?</h3>
+        <p>
+          Visit the dedicated FAQ page for quick answers about DiwaSlot and
+          accessing the application.
+        </p>
+        <a class="dark-btn" href="https://diwangames.online/faq.html" style="margin-top:12px">
+          Open FAQ
+        </a>
+      </div>
+
+      <div class="about-card">
+        <div class="eyebrow">Main Website</div>
+        <h3>Explore DiwaSlot</h3>
+        <p>
+          Return to the main website to view features, screenshots and the
+          provided download information.
+        </p>
+        <a class="gold-btn" href="https://diwangames.online/" style="margin-top:12px">
+          Visit Homepage
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="download-band">
+  <div class="container">
+    <div class="eyebrow">Ready to Explore?</div>
+    <h2>Get Started with DiwaSlot</h2>
+    <p>
+      Use the download button to open the currently provided DiwaSlot access
+      destination. Review the information before continuing.
+    </p>
+    <a class="gold-btn"
+       href="https://sharediwaslot.win?pid=524071561&amp;pkg=com.diwaslot119.app"
+       target="_blank"
+       rel="noopener noreferrer">
+      DOWNLOAD DIWASLOT
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">DiwaSlot</div>
+      <p>App information and download access.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="https://diwangames.online/">Home</a>
+      <a href="https://diwangames.online/#features">Features</a>
+      <a href="https://diwangames.online/how-to-play.html">How to Play</a>
+      <a href="https://diwangames.online/faq.html">FAQ</a>
+      <a href="https://diwangames.online/#privacy">Privacy Policy</a>
+      <a href="https://diwangames.online/#terms">Terms &amp; Conditions</a>
+    </div>
+  </div>
+
+  <div class="container" style="margin-top:25px;padding-top:20px;border-top:1px solid var(--line);font-size:10px;color:#7a7d83">
+    © 2026 DiwaSlot. Availability may vary by location and applicable laws.
+  </div>
+</footer>
+
+<div class="mobile-cta">
+  <a class="gold-btn"
+     href="https://sharediwaslot.win?pid=524071561&amp;pkg=com.diwaslot119.app"
+     target="_blank"
+     rel="noopener noreferrer">
+    DOWNLOAD DIWASLOT
+  </a>
+</div>
+
 </body>
 </html>
