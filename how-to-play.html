@@ -61,6 +61,7 @@ img{max-width:100%;display:block}
 .nav-btn{padding:11px 17px;font-size:12px}
 .gold-btn{padding:15px 24px;font-size:14px}
 .nav-btn:hover,.gold-btn:hover{transform:translateY(-2px);box-shadow:0 14px 35px rgba(246,196,83,.22)}
+.menu-btn{display:none;border:0;background:none;font-size:26px;cursor:pointer;color:var(--text);padding:4px 8px}
 .hero{
   position:relative;min-height:400px;display:flex;align-items:center;overflow:hidden;
   background:
@@ -139,7 +140,15 @@ h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,6vw,64px);l
 .footer-links a:hover{color:#111}
 .mobile-cta{display:none}
 @media(max-width:900px){
-  .navlinks{display:none}
+  .navlinks{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:#fffdf8;border-bottom:1px solid var(--line);
+    flex-direction:column;gap:0;padding:10px 20px 16px;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+  }
+  .navlinks.show{display:flex}
+  .navlinks a{padding:13px 0;border-bottom:1px solid var(--line);font-size:14px}
+  .menu-btn{display:block}
   .about-grid{grid-template-columns:1fr}
   .steps{grid-template-columns:1fr 1fr}
 }
@@ -173,13 +182,14 @@ h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,6vw,64px);l
 <header class="header">
   <div class="container nav">
     <a class="brand" href="https://diwangames.online/" aria-label="DiwaSlot home">
-      <img class="brand-logo" src="https://i.ibb.co/dsNL4XZt/logo.png" alt="DiwaSlot logo" onerror="this.style.display='none'">
+      <img class="brand-logo" src="https://i.ibb.co/dsNL4XZt/logo.png" alt="DiwaSlot logo" onerror="this.onerror=null;this.style.display='none';this.parentElement.querySelector('.logo-fallback').style.display='flex'">
+      <div class="logo-fallback" style="display:none;width:43px;height:43px;border-radius:12px;background:#191c23;color:var(--gold);align-items:center;justify-content:center;font-weight:900;font-size:13px">DS</div>
       <div>
         <div class="brand-name">DiwaSlot</div>
         <div class="brand-sub">App Information</div>
       </div>
     </a>
-    <nav class="navlinks">
+    <nav class="navlinks" id="mainNav">
       <a href="https://diwangames.online/#features">Features</a>
       <a href="https://diwangames.online/#screenshots">Screenshots</a>
       <a href="https://diwangames.online/about-us.html" >About</a>
@@ -190,7 +200,10 @@ h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,6vw,64px);l
       <a href="https://diwangames.online/#terms">Terms</a>
       <a href="https://diwangames.online/contact-us.html" >Contact</a>
     </nav>
-    <a class="nav-btn" href="https://sharediwaslot.win?pid=524071561&amp;pkg=com.diwaslot119.app" target="_blank" rel="noopener noreferrer">DOWNLOAD</a>
+    <div style="display:flex;align-items:center;gap:10px">
+      <button class="menu-btn" onclick="document.getElementById('mainNav').classList.toggle('show')" aria-label="Open menu">☰</button>
+      <a class="nav-btn" href="https://sharediwaslot.win?pid=524071561&amp;pkg=com.diwaslot119.app" target="_blank" rel="noopener noreferrer">DOWNLOAD</a>
+    </div>
   </div>
 </header>
 
@@ -318,6 +331,14 @@ h1{font-family:"Playfair Display",Georgia,serif;font-size:clamp(38px,6vw,64px);l
   <a class="gold-btn" href="https://sharediwaslot.win?pid=524071561&amp;pkg=com.diwaslot119.app" target="_blank" rel="noopener noreferrer">DOWNLOAD DIWASLOT</a>
 </div>
 
+
+<script>
+document.querySelectorAll('#mainNav a').forEach(function(link){
+  link.addEventListener('click', function(){
+    document.getElementById('mainNav').classList.remove('show');
+  });
+});
+</script>
 
 </body>
 </html>
