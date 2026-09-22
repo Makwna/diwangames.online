@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.diwangames.online/sitemap.xml
+Sitemap: https://diwangames.online/sitemap.xml
