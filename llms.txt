@@ -1,0 +1,18 @@
+# Diwan Games
+
+> Diwan Games is an online gaming website offering a variety of games for entertainment. The site is available at diwangames.online.
+
+## Main Pages
+
+- [Home](https://diwangames.online/): Main page of Diwan Games
+- [About Us](https://diwangames.online/about-us.html): About Diwan Games
+- [How to Play](https://diwangames.online/how-to-play.html): Guide on how to play the games
+- [FAQ](https://diwangames.online/faq.html): Frequently asked questions
+- [Blog](https://diwangames.online/blog.html): Articles and updates
+- [Contact Us](https://diwangames.online/contact-us.html): Contact details
+- [YONO Games Withdraw Guide](https://diwangames.online/yono-games-withdraw-guide.html): Guide for withdrawals
+
+## Policies
+
+- [Responsible Gaming](https://diwangames.online/responsible-gaming.html): Responsible gaming information
+- [Terms and Conditions](https://diwangames.online/terms-and-conditions.html): Terms of use
